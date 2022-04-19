@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.tealBG{
+    background-color: rgb(197, 236, 226);
+}
+
+.bigFont{
+    font-size: 8vh;
+    font-weight: bold;
+    text-align: center 
+}
+
+.medFont{
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center 
+}
+
+.minwidth{
+    min-width: 600px;
+}
+.pBG{
+    background-color: rgb(197, 203, 226);
+}
