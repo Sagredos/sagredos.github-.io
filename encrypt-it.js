@@ -13,11 +13,11 @@
     let resetButton = document.getElementById("reset");
     resetButton.addEventListener("click", reset);
     let capsButton = document.getElementById("all-caps");
-    capsButton.addEventListener("click", allCaps());
+    capsButton.addEventListener("click", allCaps);
     let smallFont = document.getElementById("12");
-    smallFont.addEventListener("click", smallFont());
+    smallFont.addEventListener("click", fontSize);
     let largeFont = document.getElementById("24");
-    largeFont.addEventListener("click", allCaps());
+    largeFont.addEventListener("click", fontSize);
     
   }
 
@@ -34,17 +34,14 @@
     resultText.textContent = "";
   }
 
-  function smallFont(){
+  function fontSize(){
     let smallFont = document.getElementById("12");
+    let largeFont = document.getElementById("24");
     let result = document.getElementById("result");
     if(smallFont.checked){ 
       result.style.fontSize = "12pt"; 
     }
-
-  function largeFont(){
-    let largeFont = document.getElementById("24");
-    let result = document.getElementById("result");
-    if(largeFont.checked) {
+    if(largeFont.checked){ 
       result.style.fontSize = "24pt"; 
     }
   }
@@ -75,4 +72,4 @@
     return result;
   }
 
-}})
+})();
